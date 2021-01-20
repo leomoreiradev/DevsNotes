@@ -1,0 +1,41 @@
+DEVSNOTES: Sitema de anotações simples
+
+O que o projeto precisa fazer?
+- Listar as anotações
+- Pegar informações de UMA anotação
+- Inserir uma anotação nova
+- Atualizar uma anotação 
+- Deletar uma anotação
+________________________________________________________________
+
+Qual a estrtura de dados?
+ - Local para armazenar as anotações
+ -- id
+ -- title
+ -- body
+________________________________________________________________
+
+Quais os endpoints?
+
+- (METODO) /url (PARAMETROS)
+- (GET) /api/notes/
+- (GET) /api/note/123
+- (POST) /api/note(title, body)
+- (PUT) /api/note/123 (title, body)
+- (DELETE) /api/note/123
+
+CRIANDO O PROJETO:
+Criar package.json:
+-- npm init -y
+
+Instalar dependencias:
+(npm install)
+ -- express
+ -- cors 
+ -- dotenv
+ -- mysql 
+ -- body-parser
+
+Instalar dependencias de dev:
+ (npm install --save-dev)
+ -- nodemon
